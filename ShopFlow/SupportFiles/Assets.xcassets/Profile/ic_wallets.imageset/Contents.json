@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_wallets.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

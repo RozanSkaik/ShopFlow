@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar2" customModule="Tatbeqakum" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="vqN-is-eEI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-oB-PtY">
+                    <rect key="frame" x="0.0" y="0.0" width="398" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w31-GC-177">
+                            <rect key="frame" x="25" y="48" width="22" height="32"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="ic_fav_btn"/>
+                            <connections>
+                                <action selector="btnFavorite:" destination="-1" eventType="touchUpInside" id="f6L-G4-KJU"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rCJ-zg-lnK">
+                            <rect key="frame" x="52" y="52" width="300" height="24"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWithName" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-1v-3eI">
+                                    <rect key="frame" x="100" y="0.0" width="100" height="24"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwX-FM-JwT">
+                            <rect key="frame" x="357" y="53" width="16" height="22"/>
+                            <state key="normal" image="bag"/>
+                            <connections>
+                                <action selector="btnCart:" destination="-1" eventType="touchUpInside" id="gE7-dR-SYD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="25" bottom="0.0" trailing="25"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EdS-oB-PtY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6Fs-gb-qHo"/>
+                <constraint firstItem="EdS-oB-PtY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HfB-7f-GDW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EdS-oB-PtY" secondAttribute="bottom" id="N8s-LG-Xm6"/>
+                <constraint firstAttribute="trailing" secondItem="EdS-oB-PtY" secondAttribute="trailing" id="gDN-CJ-9Pv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" name="#24A29B"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="0.0" height="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.16"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-7.5" y="-120"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bag" width="16" height="18"/>
+        <image name="ic_fav_btn" width="17" height="16"/>
+        <image name="logoWithName" width="100" height="24"/>
+        <namedColor name="#24A29B">
+            <color red="0.14100000262260437" green="0.63499999046325684" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

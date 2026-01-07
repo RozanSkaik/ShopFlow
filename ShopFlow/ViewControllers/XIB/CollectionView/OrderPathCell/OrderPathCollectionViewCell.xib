@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderPathCollectionViewCell" id="gTV-IL-0wX" customClass="OrderPathCollectionViewCell" customModule="Tatbeqakum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="86"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0JS-Rf-vkc">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="86"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL0-FT-jlC">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="86"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ix3-ZD-z71">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="86"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlB-lw-Odf">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="65"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="selected_sending_order" translatesAutoresizingMaskIntoConstraints="NO" id="knI-o6-t3Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="65" id="PVQ-2M-DYZ"/>
+                                                            <constraint firstAttribute="width" secondItem="knI-o6-t3Q" secondAttribute="height" multiplier="1:1" id="heU-wq-lkb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gs-6S-mTS">
+                                                        <rect key="frame" x="65" y="0.0" width="110" height="65"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nny-eT-aLA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110" height="65"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H05-KZ-Ugx">
+                                                                        <rect key="frame" x="0.0" y="31" width="110" height="2"/>
+                                                                        <color key="backgroundColor" red="0.90196078431372551" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="2" id="9fa-24-Rcx"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="26" leading="0.0" bottom="27" trailing="0.0"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Nny-eT-aLA" secondAttribute="trailing" id="ObN-a5-5i4"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Nny-eT-aLA" secondAttribute="bottom" id="R6q-l3-H1N"/>
+                                                            <constraint firstItem="Nny-eT-aLA" firstAttribute="top" secondItem="7gs-6S-mTS" secondAttribute="top" id="gE4-mH-G3k"/>
+                                                            <constraint firstItem="Nny-eT-aLA" firstAttribute="leading" secondItem="7gs-6S-mTS" secondAttribute="leading" id="w6b-Mb-eGP"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="توصيل الطلب" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfO-07-Azd">
+                                                <rect key="frame" x="0.0" y="70" width="175" height="16"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nL0-FT-jlC" secondAttribute="trailing" id="4WW-cl-nzD"/>
+                            <constraint firstItem="nL0-FT-jlC" firstAttribute="leading" secondItem="0JS-Rf-vkc" secondAttribute="leading" id="CcM-Mr-V9B"/>
+                            <constraint firstItem="nL0-FT-jlC" firstAttribute="top" secondItem="0JS-Rf-vkc" secondAttribute="top" id="qE4-On-URJ"/>
+                            <constraint firstAttribute="bottom" secondItem="nL0-FT-jlC" secondAttribute="bottom" id="wRl-wy-Xa4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0JS-Rf-vkc" secondAttribute="trailing" id="74x-vl-VxP"/>
+                <constraint firstItem="0JS-Rf-vkc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NCg-g4-xWL"/>
+                <constraint firstItem="0JS-Rf-vkc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uWL-ND-Ake"/>
+                <constraint firstAttribute="bottom" secondItem="0JS-Rf-vkc" secondAttribute="bottom" id="uhS-EP-iWh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="175" height="86"/>
+            <connections>
+                <outlet property="image" destination="knI-o6-t3Q" id="lwf-1d-TR5"/>
+                <outlet property="nameLbl" destination="NfO-07-Azd" id="Bda-hO-mN7"/>
+                <outlet property="pathView" destination="H05-KZ-Ugx" id="Ifm-Ze-D8J"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="118"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selected_sending_order" width="65" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCollectionViewCell" id="gTV-IL-0wX" customClass="ColorCollectionViewCell" customModule="Tatbeqakum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-Sp-S4W">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                        <color key="backgroundColor" name="#E2E2E2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5Fc-t8-oWi"/>
+                            <constraint firstAttribute="width" constant="70" id="VeU-8v-f26"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="أخضر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiQ-7o-dxp">
+                        <rect key="frame" x="20" y="20" width="92" height="51"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xdb-Sp-S4W" secondAttribute="trailing" id="GhT-i8-HsY"/>
+                <constraint firstItem="Xdb-Sp-S4W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JzC-Ye-DAn"/>
+                <constraint firstItem="jiQ-7o-dxp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Tv5-vs-wzl"/>
+                <constraint firstAttribute="bottom" secondItem="Xdb-Sp-S4W" secondAttribute="bottom" id="dyF-nZ-HE1"/>
+                <constraint firstItem="Xdb-Sp-S4W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="isl-JW-gpe"/>
+                <constraint firstItem="jiQ-7o-dxp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xNm-5W-5f5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="70" height="40"/>
+            <connections>
+                <outlet property="lblName" destination="jiQ-7o-dxp" id="hTT-wn-7L1"/>
+                <outlet property="viewBg" destination="Xdb-Sp-S4W" id="RCO-fv-782"/>
+            </connections>
+            <point key="canvasLocation" x="62.318840579710148" y="94.419642857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="#E2E2E2">
+            <color red="0.88899999856948853" green="0.88999998569488525" blue="0.88899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

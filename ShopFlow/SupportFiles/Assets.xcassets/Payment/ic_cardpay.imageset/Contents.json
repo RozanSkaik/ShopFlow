@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_cardpay.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

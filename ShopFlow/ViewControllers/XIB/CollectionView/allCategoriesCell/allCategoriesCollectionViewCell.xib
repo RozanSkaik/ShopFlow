@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="allCategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="allCategoriesCollectionViewCell" customModule="Tatbeqakum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-U4-WeO">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="158"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="984-DW-ecJ">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="158"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-KS-jgE">
+                                        <rect key="frame" x="8" y="8" width="102" height="114.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivery" translatesAutoresizingMaskIntoConstraints="NO" id="Z8F-Y2-JhD">
+                                                <rect key="frame" x="8" y="36.5" width="86" height="42"/>
+                                            </imageView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خدمات توصيل الورود" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-as-x7a">
+                                        <rect key="frame" x="8" y="127.5" width="102" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="984-DW-ecJ" firstAttribute="top" secondItem="Vkp-U4-WeO" secondAttribute="top" id="Sa8-DA-6Rs"/>
+                            <constraint firstAttribute="trailing" secondItem="984-DW-ecJ" secondAttribute="trailing" id="bjY-Yw-YMb"/>
+                            <constraint firstItem="984-DW-ecJ" firstAttribute="leading" secondItem="Vkp-U4-WeO" secondAttribute="leading" id="cEO-Wj-cWe"/>
+                            <constraint firstAttribute="bottom" secondItem="984-DW-ecJ" secondAttribute="bottom" id="nbU-p5-3uk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vkp-U4-WeO" secondAttribute="bottom" id="B3V-lx-RHe"/>
+                <constraint firstAttribute="trailing" secondItem="Vkp-U4-WeO" secondAttribute="trailing" id="F1p-ep-YNx"/>
+                <constraint firstItem="Vkp-U4-WeO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="anC-I8-1iF"/>
+                <constraint firstItem="Vkp-U4-WeO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kbE-1u-aSw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="118" height="158"/>
+            <connections>
+                <outlet property="serviceImg" destination="Z8F-Y2-JhD" id="lNV-dX-6Yq"/>
+                <outlet property="serviceLbl" destination="uhg-as-x7a" id="L4B-wy-1CU"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delivery" width="64" height="42"/>
+    </resources>
+</document>
