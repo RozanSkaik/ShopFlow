@@ -26,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         
 
-        GMSServices.provideAPIKey("AIzaSyAQDlgp_bVSz_yLR3-dPuz3E-XJC7Fb5TY")
-        GMSPlacesClient.provideAPIKey("AIzaSyAQDlgp_bVSz_yLR3-dPuz3E-XJC7Fb5TY")
+        GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
+        GMSPlacesClient.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
         // Override point for customization after application launch.
         return true
     }
