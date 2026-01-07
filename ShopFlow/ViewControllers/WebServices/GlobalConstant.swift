@@ -11,7 +11,7 @@ import Foundation
 let DefualtImagePlaceHolder = "placeholder"
 
 class GlobalConstant{
-    static let BaseUrl = "http://ShopFlow.salehly.com/public/"
+    static let BaseUrl = "YOUR_BASE_URL"
     static let APIV = BaseUrl + "api/"
     
     static let Login = APIV + "login"
